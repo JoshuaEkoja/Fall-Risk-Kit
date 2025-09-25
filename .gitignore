@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Data and local artifacts
+/data/**/*.json
+/data/**/*.jsonl
+/data/**/*.ndjson
+/data/**/*.sqlite
+/data/**/*.db
+/data/**/tmp/
+/data/
+
+# IDE
+.vscode/
+.idea/
+
+# MkDocs site output
+/site/

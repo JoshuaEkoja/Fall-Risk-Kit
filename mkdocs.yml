@@ -1,0 +1,59 @@
+site_name: FallRisk Kit (Local)
+site_description: Open-source predictive fall risk monitoring – local Python simulation
+site_url: https://example.com
+repo_url: https://github.com/your-org/FallRiskKit
+repo_name: FallRiskKit
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            docstring_section_style: list
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            show_symbol_type_heading: true
+            show_inheritance: true
+            members_order: source
+            separate_signature: true
+            line_length: 88
+  - gen-files:
+      scripts:
+        - docs_gen/gen_ref_nav.py
+  - section-index
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Usage: usage.md
+  - API Reference:
+      - Overview: api/index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-org/FallRiskKit

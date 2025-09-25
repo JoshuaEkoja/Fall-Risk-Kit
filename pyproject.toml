@@ -1,0 +1,44 @@
+[project]
+name = "fallrisk-kit"
+version = "0.1.0"
+description = "Local Python simulation of an event-driven fall-risk monitoring pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  { name = "Student Name", email = "student@example.com" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+  "fastapi==0.115.0",
+  "uvicorn==0.30.6",
+  "pydantic==2.9.2",
+  "numpy==2.1.2",
+  "pandas==2.2.3",
+  "sqlalchemy==2.0.35",
+  "aiofiles==24.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/FallRiskKit"
+Documentation = "https://example.com"
+Repository = "https://github.com/your-org/FallRiskKit"
+Issues = "https://github.com/your-org/FallRiskKit/issues"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "UP"]
+
+[tool.pydocstyle]
+convention = "google"
+add-ignore = ["D104", "D105", "D107"]
