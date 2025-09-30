@@ -42,4 +42,4 @@ mkdocs build
 pytest -q
 ```
 
-See docs/architecture.md and docs/usage.md for details.
+See docs/architecture.md, docs/stacks.md and docs/usage.md for details.
